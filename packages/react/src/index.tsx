@@ -1,8 +1,10 @@
 import { styled } from './styles'
 
-const Button = styled('button', {
+export const Button = styled('button', {
   fontFamily: '$default',
   backgroundColor: '$ignite300',
+  padding: '$4',
+  borderRadius: '$md',
 })
 
 export function App() {
