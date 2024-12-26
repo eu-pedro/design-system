@@ -1,8 +1,11 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 import * as _stitches_react_types_styled_component from '@stitches/react/types/styled-component';
 import * as _stitches_react_types_css_util from '@stitches/react/types/css-util';
+import { ComponentProps } from 'react';
 
-declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {}, {}, _stitches_react_types_css_util.CSS<{}, {
+declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
+    size?: "big" | "small" | undefined;
+}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
         white: string;
         black: string;
@@ -204,6 +207,7 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
     transition: "transitions";
     zIndex: "zIndices";
 }, {}>>;
+type ButtonProps = ComponentProps<typeof Button>;
 declare function App(): react_jsx_runtime.JSX.Element;
 
-export { App, Button };
+export { App, Button, type ButtonProps };
