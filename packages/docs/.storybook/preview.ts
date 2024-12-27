@@ -10,7 +10,7 @@ const preview: Preview = {
       },
     },
     docs: {
-      theme: ensure(themes.dark)
+      theme: themes.dark,
     }
   },
 };
